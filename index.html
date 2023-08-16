@@ -1,0 +1,119 @@
+<!-- 2023 08 20 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:url"           content="https://fredkhs.github.io/20230820/" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="生日礼物" />
+        <meta property="og:description"   content="生日快乐！" />
+        <meta property="og:image"         content="img/giftbox.png" />
+        
+        <title>A gift for you.</title>
+
+        <link rel="stylesheet"       href="custom.css">
+        <link rel="shortcut icon"    href="img/giftbox.png">
+        <link rel="preconnect"       href="https://fonts.googleapis.com">
+        <link rel="preconnect"       href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&family=Permanent+Marker&display=swap">
+        <link rel="stylesheet"       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container well h-2000">
+            <div class="scroll-element" id="home">
+                <img src="img/pics.png" id="adet" alt="Hi adet..">
+                <p id="hbd"> Happy Birthday Adett!! </p>
+                <p> Scroll down ↓ for more </p>
+            </div>
+            <div class="scroll-element" id="block-01">
+                <img src="img/hello.png" id="adet" alt="helloo..">
+                <p>Hello.</p>
+                <p id="disclaimer">Disclaimer: Scroll slowly for maximum experience.</p>
+            </div>
+            <div class="scroll-element" id="block-02">
+                <p>How's your trip?</p>
+            </div>
+            <div class="scroll-element" id="block-03">
+                <p>Hope this finds you well..</p>
+                <img src="img/cute.png" id="cute" alt="helloo..">
+            </div>
+            <div class="scroll-element" id="block-04">
+                <p>What a year it has been.</p>
+            </div>
+            <div class="scroll-element" id="block-05">
+                <p>Hope you enjoyed your 18th.</p>
+            </div>
+            <div class="scroll-element" id="block-06">
+                <p>Well.. now you're 19 already. Kinda old huh.. hehe</p>
+                <img src="img/hehe.png" id="cute" alt="hehe">
+            </div>
+            <div class="scroll-element" id="block-07">
+                <p id="hbd-chn">祝你生日快乐，林秀优! 🥳</p>
+            </div>
+            <div class="scroll-element" id="block-08">
+                <p>Wish you all the best for your studies, future plans, and everything.</p>
+            </div>
+            <div class="scroll-element" id="block-09">
+                <p>May God's blessings, happiness, and peace always be with you in whatever path you take and whatever choices you make.</p>
+            </div>
+            <div class="scroll-element" id="block-10">
+                <p>I believe a great future awaits you.</p>
+            </div>
+            <div class="scroll-element" id="block-11">
+                <p>Hope you have a wonderful year ahead.</p>
+            </div>
+            <div class="scroll-element" id="block-12">
+                <p>Hope you like the gifts as well.</p>
+                <p id="coming-soon">(Coming soon...👀)</p>
+            </div>
+            <div class="scroll-element" id="block-13">
+                <p>Enjoy your special day and family trip!</p>
+            </div>
+            <div class="scroll-element" id="block-16">
+                <p>Happy birthday once again.</p>
+            </div>
+            <div class="scroll-element" id="block-17">
+                <p>Thanks for reading this page. Have a good day!</p>
+            </div>
+            <div class="scroll-element" id="block-18">
+                <p>That's it. Don't scroll anymore, there's nothing else.</p>
+            </div>
+            <div class="scroll-element" id="block-19">
+                <p>Sorry if this website is too simple. Hope you like minimalistic things :')</p>
+                <img src="img/handsup.png" id="cute" alt="hehe..">
+            </div>
+            <div class="scroll-element" id="block-20">
+                <p>Yea there's really nothing else. You can close the page now.</p>
+            </div>
+            <div class="scroll-element" id="block-21">
+                <img src="img/baaa.png" id="adet" alt="BAAA..">
+                <p>See, you can't scroll anymore. Enjoy your day :)</p>
+            </div>
+        </div>
+    </body>
+    <script>
+        let text;
+        let her_name;
+
+        text = prompt("Hello.. Type in your name, please.");
+        if (text === null) { window.close(); }
+        her_name = text.toLowerCase();
+
+        while (her_name !== "adet" || her_name !== "adette" || her_name !== "bernadette" || her_name !== "adet hutani" || her_name !== "bernadette adila hutani"){
+            if (her_name !== "adet" || her_name !== "adette" || her_name !== "bernadette" || her_name !== "adet hutani" || her_name !== "bernadette adila hutani"){
+                break;
+            }   
+            text = prompt("Sadly this website is not for you. Type in again.");
+            if (text === null) { window.close(); }
+            her_name = text.toLowerCase();
+        }
+
+        $(document).ready(function() { $('#home').fadeIn(); });
+    </script>
+</html>
